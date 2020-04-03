@@ -45,3 +45,5 @@ output "out" {
 output "out1" {
   value = data.aws_ami.ubuntu.id
 }
+
+resource "null_resource" "show_output" {}
