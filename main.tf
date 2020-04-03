@@ -41,3 +41,7 @@ resource "aws_instance" "web" {
 output "out" {
   value = data.aws_ami.ubuntu.id
 }
+
+output "out1" {
+  value = data.aws_ami.ubuntu.id
+}
