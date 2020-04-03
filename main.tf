@@ -37,3 +37,7 @@ resource "aws_instance" "web" {
     Name = "HelloWorld"
   }
 }
+
+output "out" {
+  value = data.aws_ami.ubuntu.id
+}
