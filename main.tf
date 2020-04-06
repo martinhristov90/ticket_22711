@@ -9,10 +9,6 @@ terraform {
   }
 }
 
-provider "aws" {
-  version = "~> 2.45.0"
-  region = "us-east-1"
-}
 data "aws_ami" "ubuntu" {
   most_recent = true
 
@@ -38,12 +34,3 @@ resource "aws_instance" "web" {
   }
 }
 
-output "out" {
-  value = data.aws_ami.ubuntu.id
-}
-
-output "out1" {
-  value = data.aws_ami.ubuntu.id
-}
-
-resource "null_resource" "show_output" {}
